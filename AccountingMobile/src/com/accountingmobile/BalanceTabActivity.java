@@ -16,9 +16,9 @@ public class BalanceTabActivity extends Activity {
         TextView tvAllIncome=(TextView) findViewById(R.id.tvAllIncome);
         TextView tvBalance=(TextView) findViewById(R.id.tvBalance);
         
-        tvAllExpense.setText("Expense Total: " +String.valueOf(ExpenseTabActivity.Expense_Amount)+" L.L.");
-        tvAllIncome.setText("Income Total: " +String.valueOf(IncomeTabActivity.Income_Amount)+" L.L.");
-        tvBalance.setText("Balance: " +String.valueOf(IncomeTabActivity.Income_Amount-ExpenseTabActivity.Expense_Amount)+" L.L.");
+        tvAllExpense.setText("Expense Total: " +String.valueOf(ExpenseTabActivity.Expense_Amount));
+        tvAllIncome.setText("Income Total: " +String.valueOf(IncomeTabActivity.Income_Amount));
+        tvBalance.setText("Balance: " +String.valueOf(IncomeTabActivity.Income_Amount-ExpenseTabActivity.Expense_Amount));
         
     }
 }
