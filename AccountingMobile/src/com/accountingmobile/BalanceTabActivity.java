@@ -1,6 +1,8 @@
 /*Created by Ahmad Chaaban*/
 package com.accountingmobile;
 
+import com.accountingmobile.R;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;

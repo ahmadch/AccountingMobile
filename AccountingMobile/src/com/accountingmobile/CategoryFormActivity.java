@@ -2,6 +2,7 @@
 package com.accountingmobile;
 
 
+import com.accountingmobile.R;
 import com.accountingmobile.categoryendpoint.model.Category;
 import android.app.Activity;
 import android.app.AlertDialog;

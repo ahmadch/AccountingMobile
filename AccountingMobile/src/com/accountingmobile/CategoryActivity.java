@@ -1,6 +1,7 @@
 /*created by ahmad chaaban*/
 package com.accountingmobile;
 
+import com.accountingmobile.R;
 import com.accountingmobile.categoryendpoint.model.Category;
 import android.app.Activity;
 import android.content.Intent;
@@ -41,6 +42,9 @@ public class CategoryActivity extends Activity {
 			
 			MenuItem sync = menu.findItem(R.id.Sync);
 			sync.setVisible(false);
+			
+			MenuItem exit = menu.findItem(R.id.Exit);
+			exit.setVisible(false);
 			return true;
 		}
 

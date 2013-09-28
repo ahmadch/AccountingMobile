@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.accountingmobile.R;
 import com.accountingmobile.categoryendpoint.model.Category;
 
 
@@ -196,7 +197,14 @@ public class MainActivity extends Activity {
 			
 			startActivity(new Intent(getBaseContext(), SyncActivity.class));
 		}
-		
+		else if(item.getItemId() == R.id.Exit)
+		{
+			this.finish();
+		    Intent intent = new Intent(Intent.ACTION_MAIN);
+		    intent.addCategory(Intent.CATEGORY_HOME);
+		    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		    startActivity(intent);
+		}
 		return true;
 	}
 

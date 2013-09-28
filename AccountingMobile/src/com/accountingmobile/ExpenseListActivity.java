@@ -2,6 +2,8 @@
 package com.accountingmobile;
 
 import java.util.List;
+
+import com.accountingmobile.R;
 import com.accountingmobile.expenseendpoint.model.Expense;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -102,6 +104,9 @@ public class ExpenseListActivity extends Activity{
 			
 			MenuItem sync = menu.findItem(R.id.Sync);
 			sync.setVisible(false);
+			
+			MenuItem exit = menu.findItem(R.id.Exit);
+			exit.setVisible(false);
 			return true;
 		}
 

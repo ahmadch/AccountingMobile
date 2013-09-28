@@ -2,6 +2,7 @@ package com.accountingmobile;
 
 import java.util.List;
 
+import com.accountingmobile.R;
 import com.accountingmobile.expenseendpoint.model.Expense;
 import com.accountingmobile.incomeendpoint.model.Income;
 

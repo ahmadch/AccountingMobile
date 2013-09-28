@@ -1,6 +1,8 @@
 /*Created by Ahmad Chaaban*/
 package com.accountingmobile;
 
+import com.accountingmobile.R;
+
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;

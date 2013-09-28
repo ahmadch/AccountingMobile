@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Accounting</string>
+    <string name="app_name">CnamAccounting</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="Category">Category</string>
@@ -36,7 +36,7 @@
     
     <string name="btn_filter">Filter</string>
 	<string name="sync">Sync</string>
-    
+    <string name="exit">Exit</string>
      <string name="Add">Add</string>
      <string name="Edit">Edit</string>
      <string name="Delete">Delete</string>

@@ -2,6 +2,7 @@ package com.accountingmobile;
 
 import java.io.IOException;
 
+import com.accountingmobile.R;
 import com.accountingmobile.messageEndpoint.MessageEndpoint;
 import com.accountingmobile.messageEndpoint.model.CollectionResponseMessageData;
 import com.accountingmobile.messageEndpoint.model.MessageData;

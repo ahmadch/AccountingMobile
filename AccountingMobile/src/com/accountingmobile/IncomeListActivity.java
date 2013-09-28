@@ -3,6 +3,8 @@ package com.accountingmobile;
 
 
 import java.util.List;
+
+import com.accountingmobile.R;
 import com.accountingmobile.incomeendpoint.model.Income;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -104,6 +106,9 @@ public class IncomeListActivity extends Activity{
 			
 			MenuItem sync = menu.findItem(R.id.Sync);
 			sync.setVisible(false);
+			
+			MenuItem exit = menu.findItem(R.id.Exit);
+			exit.setVisible(false);
 			return true;
 		}
 

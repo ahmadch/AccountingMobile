@@ -6,6 +6,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
+import com.accountingmobile.R;
 import com.accountingmobile.categoryendpoint.Categoryendpoint;
 import com.accountingmobile.categoryendpoint.model.Category;
 import com.accountingmobile.categoryendpoint.model.CollectionResponseCategory;
@@ -44,6 +45,7 @@ public class SyncActivity extends Activity{
 	boolean exist_cat;
 	boolean exist_exp;
 	boolean exist_inc;
+	boolean sync_completed=false;
 	SimpleDateFormat dateFormat;
 	
 	// Progress Dialog
@@ -387,10 +389,11 @@ public class SyncActivity extends Activity{
 								 }
 				    		 }
 					    	 publishProgress(100); //100% done
-				       
+					    	 sync_completed=true;
 				     } catch (IOException e) {
 				       // TODO Auto-generated catch block
 				       e.printStackTrace();
+				       sync_completed=false;
 				       
 				     }
 				     
@@ -410,10 +413,18 @@ public class SyncActivity extends Activity{
 	   @Override
 		protected void onPostExecute(Void result) {
 			// dismiss the dialog after the process completed
-			dismissDialog(progress_bar_type);
+		   dismissDialog(progress_bar_type);
+		   if(sync_completed)
+		   {
+			
 			Toast.makeText(SyncActivity.this,"Sync Completed!", Toast.LENGTH_SHORT).show();
 			Intent MainIntent = new Intent(getBaseContext(),MainActivity.class);
 	   		startActivity(MainIntent);
+		   }
+		   else
+		   {
+			   Toast.makeText(SyncActivity.this,"Troubleshooting,Sync not Completed!", Toast.LENGTH_SHORT).show();
+		   }
 	   }
 	 }
 	 

@@ -2,6 +2,8 @@
 package com.accountingmobile;
 
 import java.util.List;
+
+import com.accountingmobile.R;
 import com.accountingmobile.incomeendpoint.model.Income;
 import android.app.Activity;
 import android.os.Bundle;

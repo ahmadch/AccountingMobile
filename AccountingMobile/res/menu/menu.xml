@@ -5,4 +5,5 @@
 <item android:id="@+id/Edit" android:title="@string/Edit"/>
 <item android:id="@+id/Delete" android:title="@string/Delete"/>
 <item android:id="@+id/Sync" android:title="@string/sync"/>
+<item android:id="@+id/Exit" android:title="@string/exit"/>
 </menu>
